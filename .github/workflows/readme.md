@@ -50,7 +50,7 @@ Web search testing
 
 ### Instalation
 
-### 1️ Clone the repository
+### 1 Clone the repository
 git clone https://github.com/guilhermed1987/agi_bank_v1.git
 cd agi_bank_v1
 npm install
