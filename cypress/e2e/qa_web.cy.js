@@ -25,7 +25,7 @@ describe('Agi Bank blog search', () => {
         cy.viewport(1920 , 1080)
     })
     endURL.forEach((slug) => {
-        it(`Search field and check the results on H1 and checks H2 widget - ${slug}`, () => {
+        it(`Check the results of the search, H1 and checks H2 widget - ${slug}`, () => {
             cy.reload()
             cy.get('a.slide-search.astra-search-icon[role="button"]').click()
             cy.get('#search-field').should('be.visible').clear()

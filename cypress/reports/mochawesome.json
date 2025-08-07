@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-08-06T22:12:46.973Z",
+    "end": "2025-08-06T22:13:01.918Z",
+    "duration": 14945,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cbd05af4-ebf6-408e-adb3-766d0c3aee77",
+      "title": "",
+      "fullFile": "cypress\\e2e\\teste.cy.js",
+      "file": "cypress\\e2e\\teste.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed74bd6b-8b52-482e-9f30-e07390661e25",
+          "title": "Agi Bank blog search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search field and check the results on H1 and checks H2 widget - beneficios",
+              "fullTitle": "Agi Bank blog search Search field and check the results on H1 and checks H2 widget - beneficios",
+              "timedOut": null,
+              "duration": 5009,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload();\ncy.get('a.slide-search.astra-search-icon[role=\"button\"]').click();\ncy.get('#search-field').should('be.visible').clear();\ncy.get('#search-field').type(`${slug}{enter}`);\ncy.get('h1').should('contain.text', slug);\ncy.contains('h2.widget-title', 'Se inscreva em nossa Newsletter');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-field.search-field>' to be 'visible'\n\nThis element `<input#search-field.search-field>` is not visible because its parent `<label>` has CSS property: `visibility: hidden`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-field.search-field>' to be 'visible'\n\nThis element `<input#search-field.search-field>` is not visible because its parent `<label>` has CSS property: `visibility: hidden`\n    at Context.eval (webpack:///./cypress/e2e/teste.cy.js:31:36)",
+                "diff": null
+              },
+              "uuid": "fae8f500-96d3-462a-96d3-7c0b5638c439",
+              "parentUUID": "ed74bd6b-8b52-482e-9f30-e07390661e25",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search field and check the results on H1 and checks H2 widget - servicos",
+              "fullTitle": "Agi Bank blog search Search field and check the results on H1 and checks H2 widget - servicos",
+              "timedOut": null,
+              "duration": 5640,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.reload();\ncy.get('a.slide-search.astra-search-icon[role=\"button\"]').click();\ncy.get('#search-field').should('be.visible').clear();\ncy.get('#search-field').type(`${slug}{enter}`);\ncy.get('h1').should('contain.text', slug);\ncy.contains('h2.widget-title', 'Se inscreva em nossa Newsletter');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-field.search-field>' to be 'visible'\n\nThis element `<input#search-field.search-field>` is not visible because its parent `<label>` has CSS property: `visibility: hidden`",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<input#search-field.search-field>' to be 'visible'\n\nThis element `<input#search-field.search-field>` is not visible because its parent `<label>` has CSS property: `visibility: hidden`\n    at Context.eval (webpack:///./cypress/e2e/teste.cy.js:31:36)",
+                "diff": null
+              },
+              "uuid": "8f9f34c2-bfb9-43fa-97e8-4661df7b91d4",
+              "parentUUID": "ed74bd6b-8b52-482e-9f30-e07390661e25",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fae8f500-96d3-462a-96d3-7c0b5638c439",
+            "8f9f34c2-bfb9-43fa-97e8-4661df7b91d4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10649,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
