@@ -13,13 +13,21 @@ with CI/CD integration via GitHub Actions and report using [Mochawarome]
 ## Structure
 
 ├── cypress/
+
 │ └── e2e/ qa_api.cy.js # API tests for Dog API
+
 │ └── e2e/ qa_web.cy.js # UI tests
+
 ├── cypress.config.js # Cypress configuration
+
 ├── .github/
+
 │ └── workflows/
+
 │ └── cypress.yml # GitHub Actions workflow
+
 ├── package.json
+
 
 ## Main scenarios:
 
